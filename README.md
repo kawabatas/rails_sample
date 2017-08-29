@@ -26,7 +26,6 @@ rails db:create
 - webコンテナ内でテストの動作確認
 ```
 rails test
-
 ```
 
 ## Docker Tips
@@ -56,6 +55,7 @@ rails generate controller Samples index show
 rails generate model dao/sample title:string body:text
 ```
 - 主要generateコマンドで生成されるファイル
+
 |コマンド名|コントローラ|ビュー|モデル|マイグレーション|アセット|ルート|テスト|ヘルパー|
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
 |scaffold   | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ |
@@ -63,7 +63,9 @@ rails generate model dao/sample title:string body:text
 |controller | ○ | ○ | × | × | ○ | ○ | ○ | ○ |
 |model      | × | × | ○ | ○ | × | × | ○ | × |
 |migration  | × | × | × | ○ | × | × | ○ | × |
+
 - リソースのルーティング
+
 |HTTPリクエスト | URL | アクション | 名前付きルート | 用途 |
 |GET | /users | index | users_path | すべてのユーザーを一覧するページ |
 |GET | /users/1 | show | user_path(user) | 特定のユーザーを表示するページ |

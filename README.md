@@ -67,6 +67,7 @@ rails generate model dao/sample title:string body:text
 - リソースのルーティング
 
 |HTTPリクエスト | URL | アクション | 名前付きルート | 用途 |
+|:--:|:--:|:--:|:--:|:--:|
 |GET | /users | index | users_path | すべてのユーザーを一覧するページ |
 |GET | /users/1 | show | user_path(user) | 特定のユーザーを表示するページ |
 |GET | /users/new | new | new_user_path | ユーザーを新規作成するページ(ユーザー登録) |

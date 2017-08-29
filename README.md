@@ -52,7 +52,7 @@ rails generate controller --help
 - generateコマンド例
 ```
 rails generate controller Samples index show
-rails generate model dao/sample title:string body:text
+rails generate model sample title:string body:text
 ```
 - 主要generateコマンドで生成されるファイル
 
